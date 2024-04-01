@@ -27,6 +27,7 @@ $(document).keypress(function(e) {
 })
 
 $(".btn").click(function(e){
+    if(gameRunning == true) {
     userClickedPattern.push(e.target.id);
     makeSound(e.target.id);
     clickCounter++;
@@ -48,11 +49,12 @@ $(".btn").click(function(e){
 
     if(clickCounter === level) {
         level++;
+        $("h1").text("Level " + level);
         clickCounter = 0;
         userClickedPattern = [];
         nextSequence();
     }
-})
+}})
 
 function restart() {
     gamePattern = [];
