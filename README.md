@@ -15,3 +15,5 @@ IDE Used: **Visual Studio Code**
 
 # Disclaimer
 Not mobile compatible
+<br>
+The volume may be too loud
